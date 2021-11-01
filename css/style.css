@@ -1,0 +1,123 @@
+
+/* ------------------------ IMPORTANDO FONTES ------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Londrina+Solid:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@500&family=Inter:wght@100;200;300;400&display=swap');
+
+/* ------------------------ CONFIGS PADRÃO PALETA DE CORES E FONTES ------------------------ */
+
+:root {
+    --cor1: #4462da;
+    --cor2: #e8e8e8;
+
+    --fonte-padrao: 'Maven Pro', sans-serif;
+    --fonte-padrao1: 'Inter', sans-serif;
+    --fonte-titulo: 'Bebas Neue', cursive;
+    --fonte-logo: 'Lobster', cursive;
+    --fonte-logo2: 'Kaushan Script', cursive;
+    --fonte-destaque: 'Anton', sans-serif;
+    --fonte-destaque2: 'Londrina Solid', cursive;
+}
+
+/* ---- CONFIGS GERAIS ---- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor2);
+}
+
+nav {
+    padding: 20px;
+    color: white;
+    background-color: var(--cor1);
+    font-family: var(--fonte-logo);
+    margin-bottom: 20px;
+}
+
+h1, a {
+    color: white;
+    text-decoration: none;
+}
+h1, a:hover {
+    color: white;
+}
+
+#versao {
+    font-family: var(--fonte-padrao1);
+    font-size: 0.7rem;
+}
+
+#infos-links {
+    font-family: var(--fonte-padrao1);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#nova-tarefa {
+    border: 1px solid var(--cor1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #4462da62;
+    margin-bottom: 20px;
+}
+
+/* ---- PAINEL ---- */
+
+#painel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+/* ---- QUADROS ---- */
+
+.quadros {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 30vh;
+}
+
+#qd1 {
+    border-right: 2px solid var(--cor1);
+    border-bottom: 2px solid var(--cor1);
+
+}
+#qd2 {
+    border-left: 2px solid var(--cor1);
+    border-bottom: 2px solid var(--cor1);
+}
+#qd3 {
+    border-right: 2px solid var(--cor1);
+    border-top: 2px solid var(--cor1);
+
+}
+#qd4 {
+    border-left: 2px solid var(--cor1);
+    border-top: 2px solid var(--cor1);
+
+}
+
+
+
+@media (max-width: 600px) {
+    #name {
+        display: none;
+    }
+
+    #nova-tarefa {
+        min-width: 330px;
+    }
+
+}

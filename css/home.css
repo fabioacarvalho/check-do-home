@@ -1,0 +1,162 @@
+/* ------------------------ IMPORTANDO FONTES ------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Londrina+Solid:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@500&family=Inter:wght@100;200;300;400&display=swap');
+
+/* ------------------------ CONFIGS PADRÃO PALETA DE CORES E FONTES ------------------------ */
+
+:root {
+    --cor1: #4462da;
+    --cor2: #e8e8e8;
+
+
+    --fonte-padrao: 'Maven Pro', sans-serif;
+    --fonte-padrao1: 'Inter', sans-serif;
+    --fonte-titulo: 'Bebas Neue', cursive;
+    --fonte-logo: 'Lobster', cursive;
+    --fonte-logo2: 'Kaushan Script', cursive;
+    --fonte-destaque: 'Anton', sans-serif;
+    --fonte-destaque2: 'Londrina Solid', cursive;
+}
+
+body {
+    background-color: rgb(26, 26, 26);
+}
+
+h1, h2 {
+    color: white;
+}
+
+#check-do {
+    font-family: 'Lobster', cursive;
+}
+
+#check-do2 {
+    color: #5c77e0;
+    font-family: 'Lobster', cursive;
+    
+}
+#check-do2:hover {
+    color: #5ce08c;
+}
+
+button, a {
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    padding: 10px 40px;
+}
+
+#img-check {
+    max-width: 350px;
+}
+
+
+div, .nav {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+#btn-acessar {
+    justify-content: flex-end;
+    background-color: transparent;
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.282);
+}
+
+#btn-acessar:hover {
+    background-color: #546fdf;
+    color: white;
+    border: #546fdf;
+}
+
+#btn-acessar2 {
+    display: none;
+}
+
+p {
+    color: white;
+    font-family: var(--fonte-padrao1);
+    text-align: justify;
+}
+
+main {
+    margin-top: 20px;
+}
+
+main, #container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+div, #bloco, p {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+        
+    div, #bloco {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        
+    }
+
+    div, nav {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    p {
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+
+    h1 {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    h1, #check-do2 {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 15px;
+        font-size: 2.5rem;
+    }
+
+    #btn-acessar {
+        width: 320px;
+        height: 45px;
+        box-shadow: 3px 3px 3px #e8e8e890;
+        border-radius: 10px;
+        background-color: #4462da;
+        color: white;
+    }
+    #btn-acessar2 {
+        display: block;
+        width: 350px;
+        height: 45px;
+        justify-content: flex-end;
+        background-color: #4462da;
+        color: white;
+        box-shadow: 3px 3px 3px #e8e8e890;
+    }
+}
