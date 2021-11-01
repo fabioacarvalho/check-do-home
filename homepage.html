@@ -1,0 +1,67 @@
+ <!-- Option 1: Bootstrap Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECK-DO</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animacoes.css">
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+<body>
+    <div id="app">
+        
+        <section class="container animate2">
+            <div class="nav">
+                <h1 id="check-do" class="anamation"> <img src="assets/img/checkimg.png" width="30px" alt="ico check"> Check - Do</h1>
+                <button id="btn-acessar" class="btn btn-primary circle2 "><a href="/home.html">Acessar</a></button>
+            </div>
+            <main id="container" class="anamation2">
+                <h1 class="col-12 col-sm-12">Organize Suas Tarefas de Forma Simples</h1>
+                <h1 class="col-12" id="check-do2">Lets Go Check - Do</h1>
+                
+                <div id="bloco" class="container">
+                    <p class="col-12 col-sm-12"> Não perca tempo mais com tarefas que podem ser planejadas ou delegadas, foque nas suas prioridades lets check-do! </p>
+                </div>
+                <img onload="imgAlterTime()" class="col-12" id="img-check" src="assets/img/check.svg" alt="check">
+                <a href="/home.html"></a><button id="btn-acessar2" class="btn mt-2">Acessar</button></a>
+            </main>
+            <span class="desloc"></span>  
+        </section>
+    </div>
+
+    <script>
+        function imgcheckgrenn() {
+            document.getElementById('img-check').src = "./assets/img/checkverde.svg"
+        }
+        function imgcheckblue() {
+            document.getElementById('img-check').src = "assets/img/check.svg"
+        }
+        var blue = true
+        function imgAlterTime() {
+            setInterval(() => {
+                blue = !blue
+                if (blue == true) {
+                    document.getElementById('img-check').src = "./assets/img/checkverde.svg"
+                } else {
+                    document.getElementById('img-check').src = "assets/img/check.svg"
+                }
+
+            },3000)
+            
+
+        }
+    </script>
+
+    <script src="config/index.js"></script>
+</body>
+</html>
