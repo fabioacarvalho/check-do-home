@@ -109,7 +109,18 @@ main {
 
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
 
+
+#namefooter {
+    color: white;
+    font-family: var(--fonte-padrao1);
+}
 
 @media (max-width: 600px) {
     #name {
@@ -118,6 +129,10 @@ main {
 
     #nova-tarefa {
         min-width: 330px;
+    }
+
+    #bloco, p {
+        display: none;
     }
 
 }

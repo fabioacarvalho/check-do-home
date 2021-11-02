@@ -19,25 +19,24 @@
 </head>
 <body>
     <div id="app">
-        
-        <section class="container animate2">
+        <section class="container animate2 col-12">
             <div class="nav">
-                <h1 id="check-do" class="anamation"> <img src="assets/img/checkimg.png" width="30px" alt="ico check"> Check - Do</h1>
+                <h1 id="check-do" class="anamation "> <img src="assets/img/checkimg.png" width="30px" alt="ico check"> Check - Do</h1>
                 <button id="btn-acessar" class="btn btn-primary circle2 "><a href="https://fabioacarvalho.github.io/check-do/">Acessar</a></button>
             </div>
             <main id="container" class="anamation2">
                 <h1 class="col-12 col-sm-12">Organize Suas Tarefas de Forma Simples</h1>
-                <h1 class="col-12" id="check-do2">Lets Go Check - Do</h1>
+                <h1 class="col-12 " id="check-do2" >Check - Do</h1>
                 
                 <div id="bloco" class="container">
                     <p class="col-12 col-sm-12"> Não perca tempo mais com tarefas que podem ser planejadas ou delegadas, foque nas suas prioridades lets check-do! </p>
                 </div>
                 <img onload="imgAlterTime()" class="col-12" id="img-check" src="assets/img/check.svg" alt="check">
-                <a href="https://fabioacarvalho.github.io/check-do/"></a><button id="btn-acessar2" class="btn mt-2">Acessar</button></a>
+                <a  href="https://fabioacarvalho.github.io/check-do/"><button id="btn-acessar2" class="btn mt-2">Acessar</button></a>
             </main>
-            <footer>
+            <footer class="container mt-5 pt-5" >
                 <span>
-                    <span id="name"  class="pa-1 justify-end"> Developed by <strong>Fábio Carvalho</strong></span>
+                    <span id="namefooter"  class="pa-1"> Developed by <strong>Fábio Carvalho</strong></span>
                     <a class="pa-1" target="_blank" href="https://github.com/fabioacarvalho">
                     <img height="40" src="https://www.vectorlogo.zone/logos/github/github-tile.svg" data-canonical-src="https://img.shields.io/badge/github-%23100000.svg?&amp;style=for-the-badge&amp;logo=github&amp;logoColor=white&amp;link=mailto:https://github.com/fabioacarvalho" style="max-width:100%;">
                     </a>
@@ -45,17 +44,13 @@
                     <img height="40" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-tile.svg" data-canonical-src="https://img.shields.io/badge/linkedin-%230077B5.svg?&amp;style=for-the-badge&amp;logo=linkedin&amp;logoColor=white&amp;link=mailto:https://www.linkedin.com/in/fabio-carvalho-881026142/" style="max-width:100%;">
                     </a>
                 </span>
-        </footer>  
+            </footer>
         </section>
+
+
     </div>
 
     <script>
-        function imgcheckgrenn() {
-            document.getElementById('img-check').src = "./assets/img/checkverde.svg"
-        }
-        function imgcheckblue() {
-            document.getElementById('img-check').src = "assets/img/check.svg"
-        }
         var blue = true
         function imgAlterTime() {
             setInterval(() => {
@@ -65,10 +60,7 @@
                 } else {
                     document.getElementById('img-check').src = "assets/img/check.svg"
                 }
-
             },3000)
-            
-
         }
     </script>
 </body>
